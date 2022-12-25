@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+td{
+    color:black;
+}
+a{
+    text-decoration: none;
+}
+    
+    </style>
+</head>
+<body>
+   
+     <div class="text-end text-white" style="font-size:30px;margin-right:50px;margin-botton:50px">    
+         <button class="btn btn-primary mb-3" ><a  style="color:white;" href="/leaveForm">Apply for Leave</a></button>
+        </div>
+
+        <div class="row me-2">
+            <div style="background:linear-gradient(red,grey); height: 600px" class="col-3">
+                 <h4>LEAVE MANAGEMENT</h4>
+
+            </div>
+             <div class="col-9 ">
+                   
+<table class="TABLE">
+    <thead style="background-color:gray;">
+        <tr class="TABLE">
+            <td>ID</td>
+             <td>TYPE</td>  
+             <td>DAYS</td>
+              <td>STATUS</td>
+        </tr>
+    </thead>
+    
+
+        {{#each rows}}
+        <tr>
+<td>{{this.ID}}</td>
+         <td>{{this.TYPE}}</td>
+        <td>{{this.DAYS}}</td>
+        <td>{{this.STATUS}}</td>
+        </tr>
+       
+        {{/each}}
+</table>
+  
+                </div>
+               </div>
+</body>
+</html>
